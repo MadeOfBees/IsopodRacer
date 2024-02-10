@@ -11,5 +11,9 @@ func _process(delta):
 	pass
 
 
-func _on_button_button_up():
-	get_tree().change_scene_to_file("res://game.tscn")
+func _on_start_j_button_up():
+	get_tree().change_scene_to_file("res://gameJ.tscn")
+
+
+func _on_start_b_button_up():
+	get_tree().change_scene_to_file("res://gameB.tscn")

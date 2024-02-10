@@ -51,7 +51,7 @@ offset_bottom = 85.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "START
-B"
+"
 
 [node name="StartJ" type="Button" parent="."]
 anchors_preset = 8
@@ -66,7 +66,6 @@ offset_bottom = 86.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "START
-J
 "
 
 [connection signal="button_up" from="StartB" to="." method="_on_button_button_up"]
