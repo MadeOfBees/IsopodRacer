@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var attraction_strength = 100.0  # Adjust the attraction strength as needed
+var attraction_strength = 50.0  # Adjust the attraction strength as needed
 
 func _ready():
 	set_physics_process(true)
