@@ -232,6 +232,7 @@ texture = ExtResource("1_uxh0n")
 stretch_mode = 1
 
 [node name="Shrimpball" parent="." instance=ExtResource("2_8o6jg")]
+position = Vector2(656, 404)
 scale = Vector2(1, 0.995582)
 
 [node name="TileMap" type="TileMap" parent="."]
