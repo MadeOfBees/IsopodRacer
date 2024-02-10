@@ -1,5 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://dtkgt5kvid2ah"]
+[gd_scene load_steps=22 format=3 uid="uid://dtkgt5kvid2ah"]
 
+[ext_resource type="Script" path="res://Goal.gd" id="1_6rbhy"]
 [ext_resource type="Texture2D" uid="uid://1n1c0hdoybqc" path="res://Strawberry.png" id="1_lss8f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d4ry0"]
@@ -130,18 +131,23 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k28l1"]
-radius = 19.0
+radius = 20.0
 height = 52.0
 
-[node name="Node" type="Area2D"]
+[node name="Goal" type="Area2D"]
+texture_filter = 1
+script = ExtResource("1_6rbhy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1052, 453)
+position = Vector2(0, -0.015625)
 scale = Vector2(3.16001, 3.16001)
 sprite_frames = SubResource("SpriteFrames_q8518")
-frame_progress = 0.753311
+frame_progress = 0.588898
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1054, 452)
+texture_filter = 1
+position = Vector2(1, 0)
 shape = SubResource("CapsuleShape2D_k28l1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
