@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cre6leqg65hpa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t8qkf"]
+radius = 2.0
+height = 6.0
+
+[node name="RopeSeg" type="RigidBody2D"]
+
+[node name="RopeCol" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_t8qkf")
+
+[node name="RopeJoint" type="PinJoint2D" parent="RopeCol"]
+position = Vector2(0, 3)
