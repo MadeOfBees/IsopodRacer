@@ -1,8 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://dtkgt5kvid2ah"]
+[gd_scene load_steps=21 format=3 uid="uid://dtkgt5kvid2ah"]
 
 [ext_resource type="Texture2D" uid="uid://1n1c0hdoybqc" path="res://Strawberry.png" id="1_lss8f"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_n3tc1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d4ry0"]
 atlas = ExtResource("1_lss8f")
@@ -131,20 +129,19 @@ animations = [{
 "speed": 30.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gbi6n"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k28l1"]
 radius = 19.0
 height = 52.0
 
-[node name="AnimatableBody2D" type="StaticBody2D"]
-texture_filter = 1
-physics_material_override = SubResource("PhysicsMaterial_n3tc1")
+[node name="Node" type="Area2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 position = Vector2(1052, 453)
 scale = Vector2(3.16001, 3.16001)
 sprite_frames = SubResource("SpriteFrames_q8518")
 frame_progress = 0.753311
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1053, 452)
-shape = SubResource("CapsuleShape2D_gbi6n")
+position = Vector2(1054, 452)
+shape = SubResource("CapsuleShape2D_k28l1")
