@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://q55cpw658ejt"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_4ndvm"]
-[ext_resource type="Texture2D" uid="uid://hnybd0i67qci" path="res://fishing_104_t.png" id="1_mc13r"]
-[ext_resource type="Texture2D" uid="uid://chtceir7b750a" path="res://Free Use Assets/Background/Brown.png" id="2_l4jfc"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_4ndvm"]
+[ext_resource type="Texture2D" uid="uid://hnybd0i67qci" path="res://Assets/shrimp.png" id="1_mc13r"]
+[ext_resource type="Texture2D" uid="uid://chtceir7b750a" path="res://Assets/Free Use Assets/Background/Brown.png" id="2_l4jfc"]
 
 [node name="Scene" type="Node"]
 script = ExtResource("1_4ndvm")
@@ -71,7 +71,7 @@ text = "START
 J
 "
 
-[connection signal="button_up" from="StartB" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="StartB" to="." method="_on_start_b_button_up"]
-[connection signal="button_up" from="StartJ" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="StartB" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="StartJ" to="." method="_on_start_j_button_up"]
+[connection signal="button_up" from="StartJ" to="." method="_on_button_button_up"]
