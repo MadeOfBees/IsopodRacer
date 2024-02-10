@@ -1,14 +1,21 @@
 extends RigidBody2D
 
+var attraction_strength = 100.0  # Adjust the attraction strength as needed
+
 func _ready():
-	# Make sure the physics process is enabled to check for input in physics frames
 	set_physics_process(true)
 
-func _physics_process(delta):
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
-		teleport_to_mouse_cursor()
-
-func teleport_to_mouse_cursor():
+func _integrate_forces(state: PhysicsDirectBodyState2D):
 	var mouse_position = get_global_mouse_position()
-	position = mouse_position
-	linear_velocity = Vector2.ZERO  # Optional: Reset velocity to avoid unintended movement after teleporting
+	var direction_to_mouse = (mouse_position - state.transform.origin).normalized()
+	var force = direction_to_mouse * attraction_strength
+	if Input.is_action_pressed("game_magnet"):
+		state.apply_central_impulse(force)
+	else:
+		var zero_force = Vector2(0,0)
+		state.set_constant_force(zero_force)
+
+
+
+func _input(event):
+	print(event.as_text())
