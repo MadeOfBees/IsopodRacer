@@ -10,94 +10,94 @@ radius = 14.0
 [node name="RopeContainer" type="Node"]
 
 [node name="Anchor" parent="." instance=ExtResource("1_805wj")]
-position = Vector2(341, 87)
+position = Vector2(459, 85)
 
 [node name="Joint" type="PinJoint2D" parent="."]
-position = Vector2(341, 97)
+position = Vector2(459, 95)
 node_a = NodePath("../Anchor")
 node_b = NodePath("../Rope")
 
 [node name="Rope" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 114)
+position = Vector2(459, 112)
 
 [node name="Joint2" type="PinJoint2D" parent="."]
-position = Vector2(341, 131)
+position = Vector2(459, 129)
 node_a = NodePath("../Rope")
 node_b = NodePath("../Rope2")
 
 [node name="Rope2" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 148)
+position = Vector2(459, 146)
 
 [node name="Joint3" type="PinJoint2D" parent="."]
-position = Vector2(341, 165)
+position = Vector2(459, 163)
 node_a = NodePath("../Rope2")
 node_b = NodePath("../Rope3")
 
 [node name="Rope3" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 182)
+position = Vector2(459, 180)
 
 [node name="Joint4" type="PinJoint2D" parent="."]
-position = Vector2(341, 199)
+position = Vector2(459, 197)
 node_a = NodePath("../Rope3")
 node_b = NodePath("../Rope4")
 
 [node name="Rope4" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 216)
+position = Vector2(459, 214)
 
 [node name="Joint5" type="PinJoint2D" parent="."]
-position = Vector2(341, 233)
+position = Vector2(459, 231)
 node_a = NodePath("../Rope4")
 node_b = NodePath("../Rope5")
 
 [node name="Rope5" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 250)
+position = Vector2(459, 248)
 
 [node name="Joint6" type="PinJoint2D" parent="."]
-position = Vector2(341, 267)
+position = Vector2(459, 265)
 node_a = NodePath("../Rope5")
 node_b = NodePath("../Rope6")
 
 [node name="Rope6" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 284)
+position = Vector2(459, 282)
 
 [node name="Joint7" type="PinJoint2D" parent="."]
-position = Vector2(341, 301)
+position = Vector2(459, 299)
 node_a = NodePath("../Rope6")
 node_b = NodePath("../Rope7")
 
 [node name="Rope7" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 318)
+position = Vector2(459, 316)
 
 [node name="Joint8" type="PinJoint2D" parent="."]
-position = Vector2(341, 335)
+position = Vector2(459, 333)
 node_a = NodePath("../Rope7")
 node_b = NodePath("../Rope8")
 
 [node name="Rope8" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 352)
+position = Vector2(459, 350)
 
 [node name="Joint9" type="PinJoint2D" parent="."]
-position = Vector2(341, 369)
+position = Vector2(459, 367)
 node_a = NodePath("../Rope8")
 node_b = NodePath("../Rope9")
 
 [node name="Rope9" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 386)
+position = Vector2(459, 384)
 
 [node name="Joint10" type="PinJoint2D" parent="."]
-position = Vector2(341, 403)
+position = Vector2(459, 401)
 node_a = NodePath("../Rope9")
 node_b = NodePath("../Rope10")
 
 [node name="Rope10" parent="." instance=ExtResource("2_31xgj")]
-position = Vector2(341, 420)
+position = Vector2(459, 418)
 
 [node name="ballJoint" type="PinJoint2D" parent="."]
-position = Vector2(341, 420)
+position = Vector2(459, 418)
 node_a = NodePath("../Rope10")
 
 [node name="Ball" type="RigidBody2D" parent="."]
-position = Vector2(341, 431)
+position = Vector2(459, 429)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ball"]
 position = Vector2(0, -1)
@@ -105,3 +105,5 @@ texture = ExtResource("3_umlmy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
 shape = SubResource("CircleShape2D_qqxyy")
+
+[node name="Node" type="Node" parent="."]
