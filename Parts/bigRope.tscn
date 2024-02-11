@@ -1,0 +1,89 @@
+[gd_scene load_steps=3 format=3 uid="uid://50n8j8onnmk7"]
+
+[ext_resource type="PackedScene" uid="uid://erwg06hyu45v" path="res://Parts/anchor.tscn" id="1_pwu5r"]
+[ext_resource type="PackedScene" uid="uid://tsjc4s8hhqsp" path="res://Parts/rope.tscn" id="2_lt8lj"]
+
+[node name="RopeContainer" type="Node"]
+
+[node name="Anchor" parent="." instance=ExtResource("1_pwu5r")]
+position = Vector2(648, 50)
+
+[node name="Joint" type="PinJoint2D" parent="."]
+position = Vector2(648, 60)
+node_a = NodePath("../Anchor")
+node_b = NodePath("../Rope")
+
+[node name="Rope" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 77)
+
+[node name="Joint2" type="PinJoint2D" parent="."]
+position = Vector2(648, 94)
+node_a = NodePath("../Rope")
+node_b = NodePath("../Rope2")
+
+[node name="Rope2" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 111)
+
+[node name="Joint3" type="PinJoint2D" parent="."]
+position = Vector2(648, 128)
+node_a = NodePath("../Rope2")
+node_b = NodePath("../Rope3")
+
+[node name="Rope3" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 145)
+
+[node name="Joint4" type="PinJoint2D" parent="."]
+position = Vector2(648, 162)
+node_a = NodePath("../Rope3")
+node_b = NodePath("../Rope4")
+
+[node name="Rope4" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 179)
+
+[node name="Joint5" type="PinJoint2D" parent="."]
+position = Vector2(648, 196)
+node_a = NodePath("../Rope4")
+node_b = NodePath("../Rope5")
+
+[node name="Rope5" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 213)
+
+[node name="Joint6" type="PinJoint2D" parent="."]
+position = Vector2(648, 230)
+node_a = NodePath("../Rope5")
+node_b = NodePath("../Rope6")
+
+[node name="Rope6" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 247)
+
+[node name="Joint7" type="PinJoint2D" parent="."]
+position = Vector2(648, 264)
+node_a = NodePath("../Rope6")
+node_b = NodePath("../Rope7")
+
+[node name="Rope7" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 281)
+
+[node name="Joint8" type="PinJoint2D" parent="."]
+position = Vector2(648, 298)
+node_a = NodePath("../Rope7")
+node_b = NodePath("../Rope8")
+
+[node name="Rope8" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 315)
+
+[node name="Joint9" type="PinJoint2D" parent="."]
+position = Vector2(648, 332)
+node_a = NodePath("../Rope8")
+node_b = NodePath("../Rope9")
+
+[node name="Rope9" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 349)
+
+[node name="Joint10" type="PinJoint2D" parent="."]
+position = Vector2(648, 366)
+node_a = NodePath("../Rope9")
+node_b = NodePath("../Rope10")
+
+[node name="Rope10" parent="." instance=ExtResource("2_lt8lj")]
+position = Vector2(648, 383)
