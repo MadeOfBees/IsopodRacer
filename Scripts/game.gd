@@ -37,6 +37,14 @@ func _process(_delta):
 				goto_scene("res://gameJ.tscn")
 			3: 
 				goto_scene("res://level0.tscn")
+			4: 
+				goto_scene("res://level1.tscn")
+			5: 
+				goto_scene("res://level2.tscn")
+			6: 
+				goto_scene("res://level3.tscn")
+			999:
+				goto_scene("res://win.tscn")
 			var l: 
 				print("Level "+str(l)+ " is not valid")
 		cur_level=level
