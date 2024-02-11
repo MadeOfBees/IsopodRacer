@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c3o08av0hvf5w"]
+[gd_scene load_steps=10 format=3 uid="uid://c3o08av0hvf5w"]
 
 [ext_resource type="Script" path="res://Scripts/level.gd" id="1_7xxg1"]
 [ext_resource type="Texture2D" uid="uid://buf1rjo6mnc2j" path="res://Assets/Free Use Assets/Background/Purple.png" id="2_rf3r4"]
@@ -6,8 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://lfjm0rxqt0rt" path="res://Shrimpball.tscn" id="4_oosh7"]
 [ext_resource type="PackedScene" uid="uid://dtkgt5kvid2ah" path="res://Goal.tscn" id="5_et5bi"]
 [ext_resource type="PackedScene" uid="uid://dbp70qbkq03es" path="res://stamina.tscn" id="6_074nj"]
-[ext_resource type="PackedScene" path="res://Parts/anchor.tscn" id="7_5xwww"]
-[ext_resource type="PackedScene" uid="uid://tsjc4s8hhqsp" path="res://Parts/rope.tscn" id="8_t18v6"]
+[ext_resource type="PackedScene" uid="uid://411syleat83v" path="res://rope_container.tscn" id="7_1ols1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s2x43"]
 texture = ExtResource("3_sad5q")
@@ -75,90 +74,7 @@ texture_filter = 1
 position = Vector2(180, 98)
 scale = Vector2(0.88, 0.88)
 
-[node name="RopeContainer" type="Node" parent="."]
-
-[node name="Anchor" parent="RopeContainer" instance=ExtResource("7_5xwww")]
-position = Vector2(341, 87)
-
-[node name="Joint" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 97)
-node_a = NodePath("../Anchor")
-node_b = NodePath("../Rope")
-
-[node name="Rope" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 114)
-
-[node name="Joint2" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 131)
-node_a = NodePath("../Rope")
-node_b = NodePath("../Rope2")
-
-[node name="Rope2" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 148)
-
-[node name="Joint3" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 165)
-node_a = NodePath("../Rope2")
-node_b = NodePath("../Rope3")
-
-[node name="Rope3" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 182)
-
-[node name="Joint4" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 199)
-node_a = NodePath("../Rope3")
-node_b = NodePath("../Rope4")
-
-[node name="Rope4" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 216)
-
-[node name="Joint5" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 233)
-node_a = NodePath("../Rope4")
-node_b = NodePath("../Rope5")
-
-[node name="Rope5" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 250)
-
-[node name="Joint6" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 267)
-node_a = NodePath("../Rope5")
-node_b = NodePath("../Rope6")
-
-[node name="Rope6" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 284)
-
-[node name="Joint7" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 301)
-node_a = NodePath("../Rope6")
-node_b = NodePath("../Rope7")
-
-[node name="Rope7" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 318)
-
-[node name="Joint8" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 335)
-node_a = NodePath("../Rope7")
-node_b = NodePath("../Rope8")
-
-[node name="Rope8" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 352)
-
-[node name="Joint9" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 369)
-node_a = NodePath("../Rope8")
-node_b = NodePath("../Rope9")
-
-[node name="Rope9" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 386)
-
-[node name="Joint10" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(341, 403)
-node_a = NodePath("../Rope9")
-node_b = NodePath("../Rope10")
-
-[node name="Rope10" parent="RopeContainer" instance=ExtResource("8_t18v6")]
-position = Vector2(341, 420)
+[node name="RopeContainer" parent="." instance=ExtResource("7_1ols1")]
 
 [connection signal="stamina" from="Shrimpball" to="CanvasLayer/Stamina" method="_on_shrimpball_stamina"]
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]

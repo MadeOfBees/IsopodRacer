@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dnj3d4yfhtw2h" path="res://Assets/Free Use Assets/Background/Green.png" id="1_tap8e"]
 [ext_resource type="PackedScene" uid="uid://lfjm0rxqt0rt" path="res://Shrimpball.tscn" id="2_8o6jg"]
 [ext_resource type="Texture2D" uid="uid://b4y4mbuujd4s4" path="res://Assets/spriteSheetGrass.png" id="4_6qi3o"]
-[ext_resource type="PackedScene" path="res://Parts/anchor.tscn" id="4_q23tm"]
+[ext_resource type="PackedScene" uid="uid://erwg06hyu45v" path="res://Parts/anchor.tscn" id="4_q23tm"]
 [ext_resource type="PackedScene" uid="uid://tsjc4s8hhqsp" path="res://Parts/rope.tscn" id="5_cyl1o"]
 [ext_resource type="PackedScene" uid="uid://dbp70qbkq03es" path="res://stamina.tscn" id="6_ry5fs"]
 
