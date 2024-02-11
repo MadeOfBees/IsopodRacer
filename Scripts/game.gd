@@ -32,13 +32,13 @@ func _process(_delta):
 			0: 
 				goto_scene("res://main.tscn")
 			1: 
-				goto_scene("res://gameJ.tscn")
-			2: 
 				goto_scene("res://gameB.tscn")
+			2: 
+				goto_scene("res://gameJ.tscn")
 			3: 
 				goto_scene("res://level0.tscn")
 			var l: 
-				print("Level "+l+ " is not valid")
+				print("Level "+str(l)+ " is not valid")
 		cur_level=level
 
 func next_level():
