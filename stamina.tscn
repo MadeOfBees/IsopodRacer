@@ -109,4 +109,4 @@ script = ExtResource("1_2ddml")
 position = Vector2(-0.015625, -0.0078125)
 sprite_frames = SubResource("SpriteFrames_f8i38")
 animation = &"new_animation"
-frame_progress = 0.567506
+frame_progress = 0.89841

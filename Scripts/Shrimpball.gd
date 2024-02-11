@@ -17,6 +17,7 @@ func _process(delta):
 	if stamina_val < max_stam:
 		stamina_val += delta*stamina_inc_step	
 	stamina.emit(stamina_val)
+	sleeping = false
 
 func _ready():
 	Input.set_custom_mouse_cursor(mouse)
