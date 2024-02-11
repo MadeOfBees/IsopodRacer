@@ -617,7 +617,7 @@ scale = Vector2(1, 0.995582)
 position_smoothing_enabled = true
 
 [node name="Goal" parent="." instance=ExtResource("4_36ln2")]
-position = Vector2(1032, 551)
+position = Vector2(1067, 572)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

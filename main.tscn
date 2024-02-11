@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://q55cpw658ejt"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_id2pp"]
-[ext_resource type="Texture2D" uid="uid://hnybd0i67qci" path="res://Assets/shrimp.png" id="1_mc13r"]
 [ext_resource type="Texture2D" uid="uid://chtceir7b750a" path="res://Assets/Free Use Assets/Background/Brown.png" id="2_l4jfc"]
+[ext_resource type="Texture2D" uid="uid://cae8nb7hl4snu" path="res://Assets/isopod_icon.png" id="3_a63qy"]
 
 [node name="Scene" type="Node"]
 script = ExtResource("1_id2pp")
@@ -24,52 +24,20 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -189.0
-offset_top = 102.0
-offset_right = -76.0
-offset_bottom = 134.0
+offset_left = -171.0
+offset_top = 63.0
+offset_right = -66.0
+offset_bottom = 88.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3.52, 3.52)
-text = "Isopod Racer"
+text = "Isopod Roller"
 
 [node name="ShrimpBall (Static)" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(576, 228)
-texture = ExtResource("1_mc13r")
-
-[node name="StartB" type="Button" parent="."]
-texture_filter = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 31.0
-offset_top = 54.0
-offset_right = 87.0
-offset_bottom = 85.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "START
-B"
-
-[node name="StartJ" type="Button" parent="."]
-texture_filter = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -109.0
-offset_top = 55.0
-offset_right = -53.0
-offset_bottom = 86.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "START
-J
-"
+position = Vector2(577, 217)
+scale = Vector2(0.726829, 0.726829)
+texture = ExtResource("3_a63qy")
 
 [node name="Start" type="Button" parent="."]
 texture_filter = 1
@@ -78,14 +46,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -39.0
-offset_top = 191.0
-offset_right = 17.0
-offset_bottom = 245.0
+offset_left = -22.0
+offset_top = 172.0
+offset_right = 34.0
+offset_bottom = 226.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "START"
 
-[connection signal="pressed" from="StartB" to="." method="_on_start_b_pressed"]
-[connection signal="pressed" from="StartJ" to="." method="_on_start_j_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
