@@ -1,0 +1,112 @@
+[gd_scene load_steps=17 format=3 uid="uid://dbp70qbkq03es"]
+
+[ext_resource type="Script" path="res://Scripts/Stamina.gd" id="1_2ddml"]
+[ext_resource type="Texture2D" uid="uid://b1rxamuneeo6q" path="res://Assets/StaminaBar.png" id="2_fik6q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8ofk"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 768, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmwef"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 704, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vv8lt"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 640, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewap4"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 576, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtukw"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 512, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1b4t"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 448, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ut6r"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 384, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ini1v"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 320, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pp31d"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 256, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cp2jv"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 192, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxsbr"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 128, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qed1"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 64, 255, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ec2yp"]
+atlas = ExtResource("2_fik6q")
+region = Rect2(0, 0, 255, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8i38"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s8ofk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmwef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vv8lt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewap4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtukw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1b4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ut6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ini1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pp31d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cp2jv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxsbr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qed1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ec2yp")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 1.0
+}]
+
+[node name="Stamina" type="StaticBody2D"]
+script = ExtResource("1_2ddml")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.015625, -0.0078125)
+sprite_frames = SubResource("SpriteFrames_f8i38")
+animation = &"new_animation"
+frame_progress = 0.101674
