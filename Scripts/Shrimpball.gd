@@ -3,8 +3,8 @@ extends RigidBody2D
 var attraction_strength = 50.0  # Adjust the attraction strength as needed
 var max_stam = 100
 var stamina_val = 80
-var stamina_inc_step = 15
-var stamina_dec_step = 1
+var stamina_inc_step = 50
+var stamina_dec_step = 4
 
 
 # Load the custom images for the mouse cursor.
