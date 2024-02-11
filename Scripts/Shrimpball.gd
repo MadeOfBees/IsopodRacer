@@ -21,6 +21,7 @@ func _process(delta):
 
 func _ready():
 	Input.set_custom_mouse_cursor(mouse)
+	set_continuous_collision_detection_mode(CCD_MODE_CAST_RAY)
 	set_physics_process(true)
 
 func _integrate_forces(state: PhysicsDirectBodyState2D):
