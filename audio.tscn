@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clmbtpl6eupew"]
+
+[ext_resource type="AudioStream" uid="uid://bul0wyobaosvt" path="res://Pinball Spring.mp3" id="1_4qluw"]
+
+[node name="Node2D" type="AudioStreamPlayer"]
+stream = ExtResource("1_4qluw")
+volume_db = -8.432
+autoplay = true

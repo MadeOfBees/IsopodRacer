@@ -75,345 +75,345 @@ texture_filter = 1
 position = Vector2(177, 94)
 scale = Vector2(0.88, 0.88)
 
-[node name="RopeContainer3" type="Node" parent="."]
-
-[node name="Anchor" parent="RopeContainer3" instance=ExtResource("7_nbuu0")]
-position = Vector2(360, 87)
-
-[node name="Joint" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 97)
-node_a = NodePath("../Anchor")
-node_b = NodePath("../Rope")
-
-[node name="Rope" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 114)
-
-[node name="Joint2" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 131)
-node_a = NodePath("../Rope")
-node_b = NodePath("../Rope2")
-
-[node name="Rope2" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 148)
-
-[node name="Joint3" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 165)
-node_a = NodePath("../Rope2")
-node_b = NodePath("../Rope3")
-
-[node name="Rope3" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 182)
-
-[node name="Joint4" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 199)
-node_a = NodePath("../Rope3")
-node_b = NodePath("../Rope4")
-
-[node name="Rope4" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 216)
-
-[node name="Joint5" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 233)
-node_a = NodePath("../Rope4")
-node_b = NodePath("../Rope5")
-
-[node name="Rope5" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 250)
-
-[node name="Joint6" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 267)
-node_a = NodePath("../Rope5")
-node_b = NodePath("../Rope6")
-
-[node name="Rope6" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 284)
-
-[node name="Joint7" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 301)
-node_a = NodePath("../Rope6")
-node_b = NodePath("../Rope7")
-
-[node name="Rope7" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 318)
-
-[node name="Joint8" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 335)
-node_a = NodePath("../Rope7")
-node_b = NodePath("../Rope8")
-
-[node name="Rope8" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 352)
-
-[node name="Joint9" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 369)
-node_a = NodePath("../Rope8")
-node_b = NodePath("../Rope9")
-
-[node name="Rope9" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 386)
-
-[node name="Joint10" type="PinJoint2D" parent="RopeContainer3"]
-position = Vector2(360, 403)
-node_a = NodePath("../Rope9")
-node_b = NodePath("../Rope10")
-
-[node name="Rope10" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
-position = Vector2(360, 420)
-
-[node name="RopeContainer4" type="Node" parent="."]
-
-[node name="Anchor" parent="RopeContainer4" instance=ExtResource("7_nbuu0")]
-position = Vector2(474, 88)
-
-[node name="Joint" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 98)
-node_a = NodePath("../Anchor")
-node_b = NodePath("../Rope")
-
-[node name="Rope" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 115)
-
-[node name="Joint2" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 132)
-node_a = NodePath("../Rope")
-node_b = NodePath("../Rope2")
-
-[node name="Rope2" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 149)
-
-[node name="Joint3" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 166)
-node_a = NodePath("../Rope2")
-node_b = NodePath("../Rope3")
-
-[node name="Rope3" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 183)
-
-[node name="Joint4" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 200)
-node_a = NodePath("../Rope3")
-node_b = NodePath("../Rope4")
-
-[node name="Rope4" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 217)
-
-[node name="Joint5" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 234)
-node_a = NodePath("../Rope4")
-node_b = NodePath("../Rope5")
-
-[node name="Rope5" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 251)
-
-[node name="Joint6" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 268)
-node_a = NodePath("../Rope5")
-node_b = NodePath("../Rope6")
-
-[node name="Rope6" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 285)
-
-[node name="Joint7" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 302)
-node_a = NodePath("../Rope6")
-node_b = NodePath("../Rope7")
-
-[node name="Rope7" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 319)
-
-[node name="Joint8" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 336)
-node_a = NodePath("../Rope7")
-node_b = NodePath("../Rope8")
-
-[node name="Rope8" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 353)
-
-[node name="Joint9" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 370)
-node_a = NodePath("../Rope8")
-node_b = NodePath("../Rope9")
-
-[node name="Rope9" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 387)
-
-[node name="Joint10" type="PinJoint2D" parent="RopeContainer4"]
-position = Vector2(474, 404)
-node_a = NodePath("../Rope9")
-node_b = NodePath("../Rope10")
-
-[node name="Rope10" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
-position = Vector2(474, 421)
-
-[node name="RopeContainer2" type="Node" parent="."]
-
-[node name="Anchor" parent="RopeContainer2" instance=ExtResource("7_nbuu0")]
-position = Vector2(246, 92)
-
-[node name="Joint" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 102)
-node_a = NodePath("../Anchor")
-node_b = NodePath("../Rope")
-
-[node name="Rope" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 119)
-
-[node name="Joint2" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 136)
-node_a = NodePath("../Rope")
-node_b = NodePath("../Rope2")
-
-[node name="Rope2" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 153)
-
-[node name="Joint3" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 170)
-node_a = NodePath("../Rope2")
-node_b = NodePath("../Rope3")
-
-[node name="Rope3" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 187)
-
-[node name="Joint4" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 204)
-node_a = NodePath("../Rope3")
-node_b = NodePath("../Rope4")
-
-[node name="Rope4" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 221)
-
-[node name="Joint5" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 238)
-node_a = NodePath("../Rope4")
-node_b = NodePath("../Rope5")
-
-[node name="Rope5" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 255)
-
-[node name="Joint6" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 272)
-node_a = NodePath("../Rope5")
-node_b = NodePath("../Rope6")
-
-[node name="Rope6" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 289)
-
-[node name="Joint7" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 306)
-node_a = NodePath("../Rope6")
-node_b = NodePath("../Rope7")
-
-[node name="Rope7" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 323)
-
-[node name="Joint8" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 340)
-node_a = NodePath("../Rope7")
-node_b = NodePath("../Rope8")
-
-[node name="Rope8" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 357)
-
-[node name="Joint9" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 374)
-node_a = NodePath("../Rope8")
-node_b = NodePath("../Rope9")
-
-[node name="Rope9" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 391)
-
-[node name="Joint10" type="PinJoint2D" parent="RopeContainer2"]
-position = Vector2(246, 408)
-node_a = NodePath("../Rope9")
-node_b = NodePath("../Rope10")
-
-[node name="Rope10" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
-position = Vector2(246, 425)
-
 [node name="RopeContainer" type="Node" parent="."]
 
 [node name="Anchor" parent="RopeContainer" instance=ExtResource("7_nbuu0")]
-position = Vector2(144, 88)
+position = Vector2(188, 81)
 
 [node name="Joint" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 98)
+position = Vector2(188, 91)
 node_a = NodePath("../Anchor")
 node_b = NodePath("../Rope")
 
 [node name="Rope" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 115)
+position = Vector2(188, 108)
 
 [node name="Joint2" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 132)
+position = Vector2(188, 125)
 node_a = NodePath("../Rope")
 node_b = NodePath("../Rope2")
 
 [node name="Rope2" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 149)
+position = Vector2(188, 142)
 
 [node name="Joint3" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 166)
+position = Vector2(188, 159)
 node_a = NodePath("../Rope2")
 node_b = NodePath("../Rope3")
 
 [node name="Rope3" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 183)
+position = Vector2(188, 176)
 
 [node name="Joint4" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 200)
+position = Vector2(188, 193)
 node_a = NodePath("../Rope3")
 node_b = NodePath("../Rope4")
 
 [node name="Rope4" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 217)
+position = Vector2(188, 210)
 
 [node name="Joint5" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 234)
+position = Vector2(188, 227)
 node_a = NodePath("../Rope4")
 node_b = NodePath("../Rope5")
 
 [node name="Rope5" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 251)
+position = Vector2(188, 244)
 
 [node name="Joint6" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 268)
+position = Vector2(188, 261)
 node_a = NodePath("../Rope5")
 node_b = NodePath("../Rope6")
 
 [node name="Rope6" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 285)
+position = Vector2(188, 278)
 
 [node name="Joint7" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 302)
+position = Vector2(188, 295)
 node_a = NodePath("../Rope6")
 node_b = NodePath("../Rope7")
 
 [node name="Rope7" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 319)
+position = Vector2(188, 312)
 
 [node name="Joint8" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 336)
+position = Vector2(188, 329)
 node_a = NodePath("../Rope7")
 node_b = NodePath("../Rope8")
 
 [node name="Rope8" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 353)
+position = Vector2(188, 346)
 
 [node name="Joint9" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 370)
+position = Vector2(188, 363)
 node_a = NodePath("../Rope8")
 node_b = NodePath("../Rope9")
 
 [node name="Rope9" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 387)
+position = Vector2(188, 380)
 
 [node name="Joint10" type="PinJoint2D" parent="RopeContainer"]
-position = Vector2(144, 404)
+position = Vector2(188, 397)
 node_a = NodePath("../Rope9")
 node_b = NodePath("../Rope10")
 
 [node name="Rope10" parent="RopeContainer" instance=ExtResource("8_1dvnq")]
-position = Vector2(144, 421)
+position = Vector2(188, 414)
+
+[node name="RopeContainer2" type="Node" parent="."]
+
+[node name="Anchor" parent="RopeContainer2" instance=ExtResource("7_nbuu0")]
+position = Vector2(320, 79)
+
+[node name="Joint" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 89)
+node_a = NodePath("../Anchor")
+node_b = NodePath("../Rope")
+
+[node name="Rope" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 106)
+
+[node name="Joint2" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 123)
+node_a = NodePath("../Rope")
+node_b = NodePath("../Rope2")
+
+[node name="Rope2" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 140)
+
+[node name="Joint3" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 157)
+node_a = NodePath("../Rope2")
+node_b = NodePath("../Rope3")
+
+[node name="Rope3" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 174)
+
+[node name="Joint4" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 191)
+node_a = NodePath("../Rope3")
+node_b = NodePath("../Rope4")
+
+[node name="Rope4" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 208)
+
+[node name="Joint5" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 225)
+node_a = NodePath("../Rope4")
+node_b = NodePath("../Rope5")
+
+[node name="Rope5" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 242)
+
+[node name="Joint6" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 259)
+node_a = NodePath("../Rope5")
+node_b = NodePath("../Rope6")
+
+[node name="Rope6" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 276)
+
+[node name="Joint7" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 293)
+node_a = NodePath("../Rope6")
+node_b = NodePath("../Rope7")
+
+[node name="Rope7" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 310)
+
+[node name="Joint8" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 327)
+node_a = NodePath("../Rope7")
+node_b = NodePath("../Rope8")
+
+[node name="Rope8" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 344)
+
+[node name="Joint9" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 361)
+node_a = NodePath("../Rope8")
+node_b = NodePath("../Rope9")
+
+[node name="Rope9" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 378)
+
+[node name="Joint10" type="PinJoint2D" parent="RopeContainer2"]
+position = Vector2(320, 395)
+node_a = NodePath("../Rope9")
+node_b = NodePath("../Rope10")
+
+[node name="Rope10" parent="RopeContainer2" instance=ExtResource("8_1dvnq")]
+position = Vector2(320, 412)
+
+[node name="RopeContainer3" type="Node" parent="."]
+
+[node name="Anchor" parent="RopeContainer3" instance=ExtResource("7_nbuu0")]
+position = Vector2(432, 77)
+
+[node name="Joint" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 87)
+node_a = NodePath("../Anchor")
+node_b = NodePath("../Rope")
+
+[node name="Rope" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 104)
+
+[node name="Joint2" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 121)
+node_a = NodePath("../Rope")
+node_b = NodePath("../Rope2")
+
+[node name="Rope2" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 138)
+
+[node name="Joint3" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 155)
+node_a = NodePath("../Rope2")
+node_b = NodePath("../Rope3")
+
+[node name="Rope3" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 172)
+
+[node name="Joint4" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 189)
+node_a = NodePath("../Rope3")
+node_b = NodePath("../Rope4")
+
+[node name="Rope4" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 206)
+
+[node name="Joint5" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 223)
+node_a = NodePath("../Rope4")
+node_b = NodePath("../Rope5")
+
+[node name="Rope5" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 240)
+
+[node name="Joint6" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 257)
+node_a = NodePath("../Rope5")
+node_b = NodePath("../Rope6")
+
+[node name="Rope6" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 274)
+
+[node name="Joint7" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 291)
+node_a = NodePath("../Rope6")
+node_b = NodePath("../Rope7")
+
+[node name="Rope7" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 308)
+
+[node name="Joint8" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 325)
+node_a = NodePath("../Rope7")
+node_b = NodePath("../Rope8")
+
+[node name="Rope8" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 342)
+
+[node name="Joint9" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 359)
+node_a = NodePath("../Rope8")
+node_b = NodePath("../Rope9")
+
+[node name="Rope9" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 376)
+
+[node name="Joint10" type="PinJoint2D" parent="RopeContainer3"]
+position = Vector2(432, 393)
+node_a = NodePath("../Rope9")
+node_b = NodePath("../Rope10")
+
+[node name="Rope10" parent="RopeContainer3" instance=ExtResource("8_1dvnq")]
+position = Vector2(432, 410)
+
+[node name="RopeContainer4" type="Node" parent="."]
+
+[node name="Anchor" parent="RopeContainer4" instance=ExtResource("7_nbuu0")]
+position = Vector2(518, 77)
+
+[node name="Joint" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 87)
+node_a = NodePath("../Anchor")
+node_b = NodePath("../Rope")
+
+[node name="Rope" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 104)
+
+[node name="Joint2" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 121)
+node_a = NodePath("../Rope")
+node_b = NodePath("../Rope2")
+
+[node name="Rope2" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 138)
+
+[node name="Joint3" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 155)
+node_a = NodePath("../Rope2")
+node_b = NodePath("../Rope3")
+
+[node name="Rope3" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 172)
+
+[node name="Joint4" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 189)
+node_a = NodePath("../Rope3")
+node_b = NodePath("../Rope4")
+
+[node name="Rope4" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 206)
+
+[node name="Joint5" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 223)
+node_a = NodePath("../Rope4")
+node_b = NodePath("../Rope5")
+
+[node name="Rope5" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 240)
+
+[node name="Joint6" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 257)
+node_a = NodePath("../Rope5")
+node_b = NodePath("../Rope6")
+
+[node name="Rope6" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 274)
+
+[node name="Joint7" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 291)
+node_a = NodePath("../Rope6")
+node_b = NodePath("../Rope7")
+
+[node name="Rope7" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 308)
+
+[node name="Joint8" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 325)
+node_a = NodePath("../Rope7")
+node_b = NodePath("../Rope8")
+
+[node name="Rope8" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 342)
+
+[node name="Joint9" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 359)
+node_a = NodePath("../Rope8")
+node_b = NodePath("../Rope9")
+
+[node name="Rope9" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 376)
+
+[node name="Joint10" type="PinJoint2D" parent="RopeContainer4"]
+position = Vector2(518, 393)
+node_a = NodePath("../Rope9")
+node_b = NodePath("../Rope10")
+
+[node name="Rope10" parent="RopeContainer4" instance=ExtResource("8_1dvnq")]
+position = Vector2(518, 410)
 
 [connection signal="stamina" from="Shrimpball" to="CanvasLayer/Stamina" method="_on_shrimpball_stamina"]
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]
