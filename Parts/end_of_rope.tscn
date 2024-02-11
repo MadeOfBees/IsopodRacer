@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dehpbwxs4wai4"]
+
+[ext_resource type="Texture2D" uid="uid://x5xotpcyvo8b" path="res://Assets/ANCHOR.png" id="1_pfbe8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wksok"]
+radius = 12.0416
+
+[node name="endOfRope" type="RigidBody2D"]
+
+[node name="Anchor" type="Sprite2D" parent="."]
+texture = ExtResource("1_pfbe8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wksok")

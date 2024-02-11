@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://tsjc4s8hhqsp"]
+[gd_scene load_steps=3 format=3 uid="uid://tsjc4s8hhqsp"]
 
-[ext_resource type="Script" path="res://Scripts/rope.gd" id="1_ais01"]
+[ext_resource type="Texture2D" uid="uid://bb10e4v0isc58" path="res://Assets/Rope.png" id="1_ciqa3"]
 
-[node name="Rope" type="Node"]
-script = ExtResource("1_ais01")
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4epol"]
+radius = 6.0
+height = 33.0
+
+[node name="Rope" type="RigidBody2D"]
+
+[node name="Rope" type="Sprite2D" parent="."]
+texture = ExtResource("1_ciqa3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_4epol")
