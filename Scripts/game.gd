@@ -28,23 +28,16 @@ func _deferred_goto_scene(path):
 
 func _process(_delta):
 	if level != cur_level:
-		match level:
-			0: 
-				goto_scene("res://main.tscn")
-			1: 
-				goto_scene("res://gameB.tscn")
-			2: 
-				goto_scene("res://gameJ.tscn")
-			3: 
-				goto_scene("res://level0.tscn")
-			4: 
-				goto_scene("res://level1.tscn")
-			5: 
-				goto_scene("res://level2.tscn")
-			6: 
-				goto_scene("res://level3.tscn")
-			var l: 
-				print("Level "+str(l)+ " is not valid")
+		if level < 3:
+			match level:
+				0: 
+					goto_scene("res://main.tscn")
+				1: 
+					goto_scene("res://gameB.tscn")
+				2: 
+					goto_scene("res://gameJ.tscn")
+		else:
+			goto_scene("res://level" + str(level-3) + ".tscn")
 		cur_level=level
 
 func next_level():
