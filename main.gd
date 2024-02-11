@@ -1,7 +1,5 @@
 extends Node
 
-@onready var game = get_node("/root/Game")
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,5 +11,11 @@ func _process(delta):
 	pass
 
 
-func _on_goal_body_entered(body):
-	game.next_level()
+func _on_start_j_pressed():
+	Game.set_level(1)
+	
+func _on_start_b_pressed():
+	Game.set_level(2)
+
+func _on_start_pressed():
+	Game.set_level(3)

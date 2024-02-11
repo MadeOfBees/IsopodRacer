@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://q55cpw658ejt"]
 
-[ext_resource type="Script" path="res://Scripts/main.gd" id="1_4ndvm"]
+[ext_resource type="Script" path="res://main.gd" id="1_id2pp"]
 [ext_resource type="Texture2D" uid="uid://hnybd0i67qci" path="res://Assets/shrimp.png" id="1_mc13r"]
 [ext_resource type="Texture2D" uid="uid://chtceir7b750a" path="res://Assets/Free Use Assets/Background/Brown.png" id="2_l4jfc"]
 
 [node name="Scene" type="Node"]
-script = ExtResource("1_4ndvm")
+script = ExtResource("1_id2pp")
 
 [node name="BG" type="TextureRect" parent="."]
 texture_filter = 1
@@ -71,7 +71,21 @@ text = "START
 J
 "
 
-[connection signal="button_up" from="StartB" to="." method="_on_button_button_up"]
-[connection signal="button_up" from="StartB" to="." method="_on_start_b_button_up"]
-[connection signal="button_up" from="StartJ" to="." method="_on_button_button_up"]
-[connection signal="button_up" from="StartJ" to="." method="_on_start_j_button_up"]
+[node name="Start" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = 191.0
+offset_right = 17.0
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "START"
+
+[connection signal="pressed" from="StartB" to="." method="_on_start_b_pressed"]
+[connection signal="pressed" from="StartJ" to="." method="_on_start_j_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

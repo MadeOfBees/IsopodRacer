@@ -627,3 +627,4 @@ position = Vector2(130, 48)
 scale = Vector2(0.88, 0.88)
 
 [connection signal="stamina" from="Shrimpball" to="CanvasLayer/Stamina" method="_on_shrimpball_stamina"]
+[connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]
