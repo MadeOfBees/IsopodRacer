@@ -54,4 +54,20 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "START"
 
+[node name="Quit" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.9999
+offset_top = 245.0
+offset_right = 33.0001
+offset_bottom = 299.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "QUIT"
+
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

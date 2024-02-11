@@ -48,6 +48,12 @@ func set_level(l):
 
 func get_level():
 	return level
+	
+func restart_level():
+	cur_level = -1
+	
+func quit():
+	get_tree().quit()
 
 func win():
 	goto_scene("res://win.tscn")
