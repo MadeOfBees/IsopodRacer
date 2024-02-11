@@ -17,6 +17,10 @@ boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://Assets/shrimp.png"
 config/icon="res://Assets/icon.svg"
 
+[autoload]
+
+Game="*res://Scripts/game.gd"
+
 [display]
 
 window/size/mode=3
